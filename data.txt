@@ -1,0 +1,85 @@
+[Topic: Overfitting]
+Overfitting occurs when a machine learning model learns patterns that are specific to the training data, including noise, rather than generalizable patterns.
+An overfitted model performs well on training data but poorly on unseen test data.
+Overfitting is common in models with high complexity relative to the size of the dataset.
+
+[Topic: Underfitting]
+Underfitting happens when a model is too simple to capture the underlying structure of the data.
+Such models perform poorly on both training and test data.
+Linear models applied to highly non-linear problems often suffer from underfitting.
+
+[Topic: Bias and Variance]
+Bias refers to errors caused by incorrect assumptions in the learning algorithm.
+Variance refers to errors caused by sensitivity to small fluctuations in the training dataset.
+High bias leads to underfitting, while high variance leads to overfitting.
+The bias-variance tradeoff represents the balance between these two sources of error.
+
+[Topic: Regularization]
+Regularization is a technique used to reduce overfitting by penalizing model complexity.
+L1 regularization (Lasso) adds the absolute value of coefficients as a penalty.
+L2 regularization (Ridge) adds the squared value of coefficients as a penalty.
+Regularization encourages simpler models that generalize better.
+
+[Topic: Cross-Validation]
+Cross-validation is a technique used to evaluate model performance on unseen data.
+In k-fold cross-validation, the dataset is divided into k subsets.
+The model is trained on k-1 folds and validated on the remaining fold.
+This process is repeated k times, and results are averaged.
+
+[Topic: Supervised Learning]
+Supervised learning involves training a model using labeled data.
+Common supervised learning tasks include classification and regression.
+Examples of supervised algorithms include Linear Regression, Logistic Regression, SVM, and Decision Trees.
+
+[Topic: Unsupervised Learning]
+Unsupervised learning deals with unlabeled data.
+The goal is to discover hidden patterns or structures.
+Common unsupervised algorithms include K-Means clustering and Hierarchical clustering.
+
+[Topic: Support Vector Machines]
+Support Vector Machines are supervised learning algorithms used for classification and regression.
+SVMs aim to find the optimal hyperplane that maximizes the margin between classes.
+Kernel functions allow SVMs to perform non-linear classification.
+Common kernels include linear, polynomial, and RBF.
+
+[Topic: Feature Scaling]
+Feature scaling ensures that numerical features have comparable ranges.
+Common techniques include Min-Max scaling and Standardization.
+SVMs and distance-based algorithms are sensitive to feature scale.
+
+[Topic: Train-Test Split]
+A train-test split divides data into training and testing subsets.
+The training set is used to learn model parameters.
+The test set is used to evaluate generalization performance.
+A common split ratio is 80% training and 20% testing.
+
+[Topic: Evaluation Metrics]
+Accuracy measures the proportion of correct predictions.
+Precision measures the proportion of true positives among predicted positives.
+Recall measures the proportion of true positives among actual positives.
+F1-score is the harmonic mean of precision and recall.
+
+[Topic: Confusion Matrix]
+A confusion matrix summarizes classification performance.
+It includes true positives, true negatives, false positives, and false negatives.
+It provides deeper insight than accuracy alone.
+
+[Topic: Gradient Descent]
+Gradient descent is an optimization algorithm used to minimize loss functions.
+It updates model parameters in the direction of the negative gradient.
+Variants include batch, stochastic, and mini-batch gradient descent.
+
+[Topic: Learning Rate]
+The learning rate controls the step size during optimization.
+A high learning rate may cause divergence.
+A low learning rate may result in slow convergence.
+
+[Topic: Data Leakage]
+Data leakage occurs when information from outside the training dataset is used during training.
+This leads to overly optimistic evaluation results.
+Proper data separation prevents data leakage.
+
+[Topic: Model Generalization]
+Generalization refers to a model’s ability to perform well on unseen data.
+Techniques such as regularization and cross-validation improve generalization.
+Overfitting directly harms generalization performance.
