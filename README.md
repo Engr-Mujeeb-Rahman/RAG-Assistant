@@ -32,12 +32,12 @@ RAG_Project/<br>
 
 ## Setup Instructions
 
+```bash
 1. Clone the repository:
 
-```bash
+
 git clone https://github.com/YourUsername/Akbar-RAG-Assistant.git
 cd Akbar-RAG-Assistant
-```bash
 
 2. Create a virtual environment (recommended):
 
@@ -45,22 +45,18 @@ cd Akbar-RAG-Assistant
 python -m venv myenv
 source venv/bin/activate      # Linux/Mac
 venv\Scripts\activate         # Windows
-```bash
 
 3. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
-```bash
 
 4. Create a .env file in the project root:
 
 ```bash
 GOOGLE_API_KEY=your_google_gemini_api_key
-```bash
 
 5. Run the Streamlit app:
 
 ```bash
 streamlit run frontend.py
-```bash
